@@ -1,0 +1,6 @@
+<% display_name = @customer.first_name + " " + @customer.last_name %>
+Hi <%= "#{display_name}" %>
+
+Welcome to Shop360! A place to fullfill all your shopping needs from a small button to a big widescreen TV. Click on the link below to activate your account and get started to Shop at 360. 
+
+<%= edit_account_activation_url(@customer.activation_token, email: @customer.email) %>
