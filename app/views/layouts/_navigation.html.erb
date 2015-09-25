@@ -5,7 +5,7 @@
     <div>
       <ul class="nav navbar-nav">
         <li><div class="navbar-header">
-        <a href="<%= home_path %>" class="navbar-brand"><span class="glyphicon glyphicon-shopping-cart"></span> Shop360</a>
+        <a href="<%= root_path %>" class="navbar-brand"><span class="glyphicon glyphicon-shopping-cart"></span> Shop360</a>
         </div></li>
         <li><a href="<%= about_path %>">About</a></li>
         <li><a href="<%= faqs_path %>">FAQ's</a></li>
@@ -20,6 +20,7 @@
           <li><%= link_to "#{display_name}", current_customer, class: "active" %></li>
           <li><%= link_to "Customers", customers_path, class: "navbar-brand" %></li>
           <li><%= link_to "Products", products_path, class: "navbar-brand" %></li>
+          <li><%= link_to "Category", categories_path, class: "navbar-brand" %></li>
           <li><%= link_to "Log out", logout_path, method: "delete", class: "navbar-brand" %></li>
         </ul>
       

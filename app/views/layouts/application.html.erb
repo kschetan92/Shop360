@@ -13,6 +13,8 @@
 </head>
 <body>
 <%= render "layouts/navigation" %>
+<%= render "layouts/searchbar" %>
+<hr>
 <div class="container-fluid">
 <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>

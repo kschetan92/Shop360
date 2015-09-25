@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150924065203) do
+ActiveRecord::Schema.define(version: 20150925093232) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "category_name", limit: 255
+    t.text     "description",   limit: 65535
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "customers", force: :cascade do |t|
     t.string   "first_name",      limit: 255
@@ -28,16 +35,27 @@ ActiveRecord::Schema.define(version: 20150924065203) do
     t.datetime "updated_at",                                    null: false
     t.string   "remember_digest", limit: 255
     t.boolean  "admin",                         default: false
+    t.datetime "deleted_at"
   end
 
+  add_index "customers", ["deleted_at"], name: "index_customers_on_deleted_at", using: :btree
+
   create_table "products", force: :cascade do |t|
-    t.string   "product_name", limit: 255
-    t.string   "brand",        limit: 255
-    t.text     "description",  limit: 65535
-    t.decimal  "price",                      precision: 10
-    t.integer  "quantity",     limit: 4
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
+    t.string   "product_name",       limit: 255
+    t.string   "brand",              limit: 255
+    t.text     "description",        limit: 65535
+    t.decimal  "price",                            precision: 10
+    t.integer  "quantity",           limit: 4
+    t.datetime "created_at",                                      null: false
+    t.datetime "updated_at",                                      null: false
+    t.datetime "deleted_at"
+    t.integer  "category_id",        limit: 4
+    t.string   "image_file_name",    limit: 255
+    t.string   "image_content_type", limit: 255
+    t.integer  "image_file_size",    limit: 4
+    t.datetime "image_updated_at"
   end
+
+  add_index "products", ["deleted_at"], name: "index_products_on_deleted_at", using: :btree
 
 end

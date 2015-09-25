@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'pages#home'
+  
+  root 'store#index'
 
   get "home" => 'pages#home'
 
@@ -24,8 +25,12 @@ Rails.application.routes.draw do
 
   get "add_product" => 'products#new'
 
+  get "/store/:id" => 'store#show', as: :store_product
+
+  get 'search_results' => 'store#search_results'
   resources :customers
   resources :products
+  resources :categories
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

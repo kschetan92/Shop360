@@ -1,6 +1,6 @@
 class Customer < ActiveRecord::Base
   attr_accessor :remember_token
-
+  acts_as_paranoid
   before_save :downcase_email
 
   validates :first_name, presence: true, length: {maximum: 200}

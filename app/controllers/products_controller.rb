@@ -1,5 +1,7 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :admin_customer, only: [:destroy]
+  before_action :set_categories, only: [:new, :edit]
 
   # GET /products
   # GET /products.json
@@ -15,6 +17,7 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
+    
   end
 
   # GET /products/1/edit
@@ -70,8 +73,21 @@ class ProductsController < ApplicationController
       @product = Product.find(params[:id])
     end
 
+    def set_categories
+      @categories = Category.order(:category_name)
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:product_name, :brand, :description, :price, :quantity)
+      params.require(:product).permit(:product_name, :brand, :description, :price, :quantity, :category_id, :image)
+    end
+
+    def admin_customer
+      if current_customer.admin?
+        
+      else
+      flash[:danger] = "You are not an admin, for your action an FIR has been filed against you."
+      redirect_to(root_url)
+      end 
     end
 end
