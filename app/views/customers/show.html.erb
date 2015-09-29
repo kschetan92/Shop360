@@ -1,3 +1,10 @@
+<% if @customer.avatar? %>
+  <p>
+    <%= image_tag @customer.avatar.url(:medium) %>
+<% else %>
+    <%= image_tag("missing.jpg", size: "300x300") %>
+  </p>
+<% end %>
 <p>
   <strong>First name:</strong>
   <%= @customer.first_name %>

@@ -1,15 +1,10 @@
-<h2>Search Results</h2>
-
-
 <% if @products.size.zero? %>
   <h4 style="color: red">Sorry No results matched your search</h4>
 <% else %>
 
-<h4 style="color: teal"><%= pluralize(@products.size, "results") %> matched your search</h4>
-
 <% @products.each do |product| %>
 
-  <div class="grind">
+  <div class="store">
     <% if product.image? %>
       <%= image_tag product.image.url(:medium) %>
     <% else %>
@@ -21,14 +16,7 @@
     <h4 class="price">
       <%= number_to_currency(product.price, :unit => "Rs ") %>
     </h4>
-    <% if product.category %>
-      <p>
-        <strong>Category: </strong><%= product.category.category_name %>
-      </p>
-    <% end %>
-    <div class="description">
-      <%= product.description %>
-    </div>
+    <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-info" %>
   </div>
   <% end %>
 <% end %>

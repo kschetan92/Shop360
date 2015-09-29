@@ -48,6 +48,10 @@
     <%= f.date_select :date_of_birth, :start_year=>1890,:end_year=>2000 %>
   </div>
   <div class="field">
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
+  </div>
+  <div class="field">
     <%= f.label :password, "Choose Password" %><br>
     <%= f.password_field :password %>
   </div>

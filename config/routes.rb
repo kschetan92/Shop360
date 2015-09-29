@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  
+  resources :orders
   root 'store#index'
 
   get "home" => 'pages#home'
@@ -31,6 +31,8 @@ Rails.application.routes.draw do
   resources :customers
   resources :products
   resources :categories
+  resources :line_items
+  resources :carts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

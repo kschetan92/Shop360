@@ -2,7 +2,8 @@ class CustomersController < ApplicationController
   before_action :set_customer, only: [:show, :edit, :update, :destroy]
   before_action :logged_in_customer, only: [:index, :edit, :update, :destroy]
   before_action :correct_customer, only: [:edit, :update]
-  before_action :admin_customer, only: [:destroy]
+  before_action :admin_customer, only: [:destroy, :index]
+  skip_before_filter :authorize
 
   # GET /customers
   # GET /customers.json
@@ -76,7 +77,7 @@ class CustomersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def customer_params
-      params.require(:customer).permit(:first_name, :last_name, :email, :mobile, :address, :country, :city, :pincode, :date_of_birth, :password, :password_confirmation)
+      params.require(:customer).permit(:first_name, :last_name, :email, :mobile, :address, :country, :city, :pincode, :date_of_birth, :avatar, :password, :password_confirmation)
     end
 
     def logged_in_customer

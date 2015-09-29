@@ -1,5 +1,7 @@
 <%= render '/shared/listProducts' %>
 
 <p>
-  <%= link_to 'Home', root_path, class: "btn btn-warning" %>
+  <%= button_to 'Add to Cart', line_items_path(product_id: @product), class: "btn btn-info" %>
+  <br>
+  <%= link_to 'Home', root_path, class: "btn btn-warning" %>  
 </p>

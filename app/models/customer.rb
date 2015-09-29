@@ -15,6 +15,8 @@ class Customer < ActiveRecord::Base
   validates :city, presence: true
   validates :pincode, presence: true
   validates :date_of_birth, presence: true
+  has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }
+  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 
   def Customer.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

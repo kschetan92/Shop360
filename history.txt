@@ -1,0 +1,1000 @@
+ 1002  rails s
+ 1003  cd
+ 1004  cd delete_app/
+ 1005  rails s
+ 1006  cd
+ 1007  ls
+ 1008  cd Rails
+ 1009  ls
+ 1010  cd 
+ 1011  ls -l
+ 1012  chmod 744 Web/
+ 1013  ls -l
+ 1014  chmod 755 Web/
+ 1015  ls -l
+ 1016  chmod 775 Web/
+ 1017  ls -l
+ 1018  ls doc
+ 1019  cat created.rid
+ 1020  cd d
+ 1021  cd doc
+ 1022  ls
+ 1023  cat created.rid
+ 1024  rm doc
+ 1025  rmdir doc
+ 1026  rm created.rid 
+ 1027  cd ..
+ 1028  rmdir doc
+ 1029  clear
+ 1030  ls -l
+ 1031  rm -rf Rails_personal/ RailsApplication/
+ 1032  ls -l
+ 1033  ls -lt
+ 1034  ls -lh
+ 1035  exit
+ 1036  cd RailsA
+ 1037  cd RailsApplication/
+ 1038  ls
+ 1039  cd SampleRailsApplication/
+ 1040  ls
+ 1041  cd sample_app/
+ 1042  ls
+ 1043  bundle exec rake test
+ 1044  rake -T
+ 1045  cd test/
+ 1046  ls
+ 1047  rake test
+ 1048  clear
+ 1049  rake test
+ 1050  cd ..
+ 1051  rake db:migrate
+ 1052  cd ..
+ 1053  cd sample_app/
+ 1054  rake test
+ 1055  mysql -u root -p
+ 1056  clear
+ 1057  rake db:migrate
+ 1058  mysql -u root -p
+ 1059  rake test;
+ 1060  mysql -u root -p
+ 1061  bundle exec rake test;
+ 1062  bundle exec rake
+ 1063  cd ..
+ 1064  cd
+ 1065  rails new delete_app
+ 1066  clear
+ 1067  ls
+ 1068  ls -l
+ 1069  rm -rf delete_app/
+ 1070  rails new delete_app -d mysql
+ 1071  cd de
+ 1072  cd delete_app/
+ 1073  ls
+ 1074  atom .
+ 1075  bundle install
+ 1076  rake db:create
+ 1077  rails g controller delete index
+ 1078  cd
+ 1079  rm -rf delete_app/
+ 1080  cd Rails/
+ 1081  cd articles/
+ 1082  ls
+ 1083  rails s
+ 1084  clear
+ 1085  cd ..
+ 1086  rails new RegisterationApp -d mysql
+ 1087  cd RegisterationApp/
+ 1088  subl .
+ 1089  ls
+ 1090  bundle
+ 1091  bundle update
+ 1092  rails s
+ 1093  cd Rails/
+ 1094  ls
+ 1095  cd RegisterationApp/
+ 1096  rail s
+ 1097  rails s
+ 1098  cd Rails/RegisterationApp/
+ 1099  cd bin/
+ 1100  rake db:create
+ 1101  rails g controller Pages home help about contact_us
+ 1102  irb
+ 1103  cd Rails/
+ 1104  cd RegisterationApp/
+ 1105  ls
+ 1106  bundle install
+ 1107  rails s
+ 1108  cd ..
+ 1109  cd articles/
+ 1110  rails s
+ 1111  clear
+ 1112  rake test
+ 1113  cd
+ 1114  exit
+ 1115  cd Rails/
+ 1116  cd RegisterationApp/
+ 1117  rails generate controller Users new
+ 1118  rials generate model User name:string email:string
+ 1119  rails generate model User name:string email:string
+ 1120  rake db:migrate
+ 1121  rake db:rollback
+ 1122  rake db:migrate
+ 1123  rails console --sandbox
+ 1124  rake test:models
+ 1125  rails generate migration add_index_to_users_email
+ 1126  rake db:migrate
+ 1127  rake test:models
+ 1128  rake routes
+ 1129  rails generate migration add_password_to_users password:string
+ 1130  rake db:migrate
+ 1131  bundle install
+ 1132  rake 
+ 1133  rake test
+ 1134  rake db:migrate
+ 1135  mysql -u root -p
+ 1136  rake db:rollback;
+ 1137  rails generate migration add_password_digest_to_users password_digest:string
+ 1138  rake db:migrate
+ 1139  rake test
+ 1140  rake
+ 1141  rake test:model
+ 1142  rake test::model
+ 1143  cd
+ 1144  exit
+ 1145  cd Rails/
+ 1146  cd D
+ 1147  cd ..
+ 1148  cd Delete/
+ 1149  rake db:migrate
+ 1150  rails destroy scaffold customer
+ 1151  rails g scaffold Customer name:string
+ 1152  rake db:migrate
+ 1153  rake db:rollback VERSION=0
+ 1154  cd
+ 1155  mkdir
+ 1156  mkdir web.html
+ 1157  rmdir web.html/
+ 1158  touch web.html
+ 1159  exit
+ 1160  mkdir Delete
+ 1161  cd Delete/
+ 1162  rails new .
+ 1163  rails g scaffold Product name:string
+ 1164  rails g scaffold Customercustomer_ name:string
+ 1165  rails
+ 1166  rails s
+ 1167  exit
+ 1168  cd Rails/
+ 1169  cd RegisterationApp/
+ 1170  ls
+ 1171  rake test
+ 1172  rails console
+ 1173  cd Rails/RegisterationApp/
+ 1174  rails s
+ 1175  gem uninstall puma
+ 1176  rails s
+ 1177  bundle install
+ 1178  rails s
+ 1179  bundle install
+ 1180  rails s
+ 1181  gem uninstall puma
+ 1182  gem uninstall rails12_factor
+ 1183  bundle install
+ 1184  bundle update
+ 1185  rails s
+ 1186  cd Rails/RegisterationApp/
+ 1187  rials s
+ 1188  rails s
+ 1189  cd Rails/RegisterationApp/
+ 1190  rail s
+ 1191  rails s
+ 1192  cd Rails/
+ 1193  cd RegisterationApp/
+ 1194  rails console
+ 1195  rake db:migrate:reset
+ 1196  rails g integration_test users_signup
+ 1197  rake test
+ 1198  rake db:migrate:reset
+ 1199  bundle install
+ 1200  web: bundle exec puma -C config/puma.rb
+ 1201  bundle exec puma -C config/puma.rb
+ 1202  rake db:migrate:reset
+ 1203  rails g controller sessions new
+ 1204  rails destroy controller sessions
+ 1205  rails g controller Sessions new
+ 1206  rails destroy controller sessions new
+ 1207  rails g controller Sessions new
+ 1208  rake routes
+ 1209  rake db:migrate:reset
+ 1210  mysql -u root -p
+ 1211  cd Rails/RegisterationApp/
+ 1212  rail s
+ 1213  rails s
+ 1214  bundle instal
+ 1215  bundle install
+ 1216  bundle update
+ 1217  rail s
+ 1218  rails s
+ 1219  bundle install
+ 1220  bundle update
+ 1221  bundle clean --force
+ 1222  bundle update
+ 1223  bundle install
+ 1224  rails s
+ 1225  cd ..
+ 1226  ls
+ 1227  cd product/
+ 1228  rails s
+ 1229  bundle clean --force
+ 1230  bundle install
+ 1231  rails s
+ 1232  ls
+ 1233  clear
+ 1234  cd ..
+ 1235  cd RegisterationApp/
+ 1236  rails s
+ 1237  bundle isntall
+ 1238  bundle
+ 1239  rails s
+ 1240  cd Rails/
+ 1241  RegisterationApp/
+ 1242  cd RegisterationApp/
+ 1243  rails s
+ 1244  bundle
+ 1245  rails s
+ 1246  bundle
+ 1247  rails s
+ 1248  rake db:migrate:reset
+ 1249  rails s
+ 1250  rials s
+ 1251  rails s
+ 1252  rake db:migrate:reset
+ 1253  rails s
+ 1254  cd Rails/
+ 1255  cd RegisterationApp/
+ 1256  rake routes
+ 1257  rails generate migration add_remember_digest_to_users remember_digest:string
+ 1258  rake db:migrate
+ 1259  cd Rails/RegisterationApp/
+ 1260  rails s
+ 1261  cd ..
+ 1262  cd Pace360/
+ 1263  rails s
+ 1264  cd ..
+ 1265  cd RegisterationApp/
+ 1266  rails s
+ 1267  mysql -u root -p
+ 1268  use RegisterationApp_development
+ 1269  mysql -u root -p
+ 1270  exit
+ 1271  cd Rails/RegisterationApp/
+ 1272  bundle
+ 1273  rake db:migrateA:reset
+ 1274  rake db:migrate:reset
+ 1275  rake db:seed
+ 1276  rake db:migrate:reset
+ 1277  rake db:seed
+ 1278  bundle install
+ 1279  rails generate migration add_admin_to_users admin:boolean
+ 1280  rake db:migrate
+ 1281  rake db:migrate:reset
+ 1282  rake db:seed
+ 1283  rake db:migrate:reset
+ 1284  rake db:seed
+ 1285  rails generate controller AccountActivations --no-test-framework
+ 1286  rails generate migration add_activation_to_users > activation_digest:string activated:boolean activated_at:datetime
+ 1287  rake db:migrtae
+ 1288  rake db:migrate
+ 1289  clear
+ 1290  rake db:migrate
+ 1291  rake db:rollback
+ 1292  rake db:migrate
+ 1293  clear
+ 1294  rake db:migrate
+ 1295  rake db:rollback
+ 1296  rake db:migrate
+ 1297  rake db:rollback VERSION=0
+ 1298  rake db:migrate:down VERSION=0
+ 1299  rake db:migrate
+ 1300  rake db:migrate:down VERSION=20150915045512
+ 1301  rake db:migrate
+ 1302  rake db:migrate:down VERSION=20150915051029
+ 1303  rake db:migrate
+ 1304  clear
+ 1305  rake db:migrate:reset
+ 1306  rake db:seed
+ 1307  rake db:migrate:reset
+ 1308  rake db:seed
+ 1309  rake db:migrate:reset
+ 1310  rake db:seed
+ 1311  rake db:migrate:reset
+ 1312  rake db:seed
+ 1313  rails generate mailer UserMailer account_activation password_reset
+ 1314  rake db:migrate:reset
+ 1315  rake db:seed
+ 1316  rake db:migrate:reset
+ 1317  rake db:seed
+ 1318  rails generate controller PasswordResets new edit --no-test-framework
+ 1319  rails generate migration add_reset_to_users reset_digest:string > reset_sent_at:datetime
+ 1320  rake db:migrate
+ 1321  git status
+ 1322  cd
+ 1323  cd Rails/
+ 1324  ls
+ 1325  git clone git@github.com:kschetan92/Pace360.git
+ 1326  ls
+ 1327  cd RegisterationApp/
+ 1328  ls
+ 1329  cd ..
+ 1330  cd Pace360/
+ 1331  cd ..
+ 1332  mv /home/chetan/Rails/RegisterationApp/. /home/chetan/Rails/Pace360/
+ 1333  mv /home/chetan/Rails/RegisterationApp/ /home/chetan/Rails/Pace360/
+ 1334  ls
+ 1335  cd Pace360/
+ 1336  ls
+ 1337  cd RegisterationApp/
+ 1338  ls
+ 1339  cd ..
+ 1340  git branch
+ 1341  git checkout -b Pace360
+ 1342  git branch
+ 1343  git status
+ 1344  git reset
+ 1345  ls
+ 1346  git reset
+ 1347  git branch
+ 1348  git status
+ 1349  git pull origin master
+ 1350  git status
+ 1351  cd ..
+ 1352  git status
+ 1353  cd Pace360/
+ 1354  ls
+ 1355  cd ..
+ 1356  git clone git@github.com:kschetan92/Pace360.git
+ 1357  rm -rf Pace360/
+ 1358  git clone git@github.com:kschetan92/Pace360.git
+ 1359  cd Pace360/
+ 1360  ls
+ 1361  git branch 
+ 1362  git checkout -b Pace360
+ 1363  ls
+ 1364  git status
+ 1365  git add Pace360/
+ 1366  git status
+ 1367  git commit -m "Adding a rails application"
+ 1368  git push origin Pace360 
+ 1369  cd 
+ 1370  mkdir delete
+ 1371  cd delete/
+ 1372  ls
+ 1373  git init
+ 1374  git pull origin Pace360
+ 1375  cd ..
+ 1376  ls
+ 1377  ls -l
+ 1378  rm -rf delete/ 
+ 1379  cd Delete/
+ 1380  ls
+ 1381  cd ..
+ 1382  rm -rf D
+ 1383  rm -rf Del
+ 1384  rm -rf Delete/
+ 1385  ls -l
+ 1386  cat web.html 
+ 1387  rm web.html 
+ 1388  clear
+ 1389  ls -l
+ 1390  mkdir Delete
+ 1391  cd Delete/
+ 1392  rails new . -d mysql
+ 1393  ls
+ 1394  clear
+ 1395  rails generate scaffold User name:string email:string
+ 1396  rake db:migrate
+ 1397  rake db:create
+ 1398  rake db:migrate
+ 1399  rails s
+ 1400  cd 
+ 1401  cd Rails/
+ 1402  cd Pace360/
+ 1403  rails s
+ 1404  ls
+ 1405  cd Pace360/
+ 1406  rails s
+ 1407  cd 
+ 1408  cd deja-dup/
+ 1409  cd ..
+ 1410  cd Delete/
+ 1411  rails s
+ 1412  cd 
+ 1413  cd Rails/
+ 1414  cd articles/
+ 1415  rails s
+ 1416  bundle install
+ 1417  rails s
+ 1418  cd ..
+ 1419  cd Delete/
+ 1420  rails s
+ 1421  ls
+ 1422  cd ..
+ 1423  ls
+ 1424  ls -l
+ 1425  rm -rf Delete/
+ 1426  ls
+ 1427  rails new Delete -d mysql
+ 1428  cd Delete/
+ 1429  rails generate scaffold User name:string email:string
+ 1430  ls
+ 1431  cd ..
+ 1432  ls -l
+ 1433  rm -rf Delete/
+ 1434  ls -l
+ 1435  cd Rails/
+ 1436  ls
+ 1437  rails new post -d mysql
+ 1438  rails generate scaffold Task name:string
+ 1439  ls
+ 1440  cd post/
+ 1441  rails generate scaffold Task name:string
+ 1442  bundle
+ 1443  rails generate scaffold Task name:string
+ 1444  rake db:create
+ 1445  rake db:migrate
+ 1446  rails 
+ 1447  rails s
+ 1448  ls
+ 1449  cd ..
+ 1450  ls
+ 1451  rm -rf post/
+ 1452  ls
+ 1453  ls -l
+ 1454  cd Pace360/
+ 1455  rails s
+ 1456  subl .
+ 1457  rails s
+ 1458  exit
+ 1459  ls
+ 1460  ks -l
+ 1461  ls -l
+ 1462  cd we
+ 1463  cd Web/
+ 1464  ls -l
+ 1465  cd JavaScript/
+ 1466  ls -l
+ 1467  cd ..
+ 1468  cd R
+ 1469  cd Rails/
+ 1470  ls 
+ 1471  rm -rf articles/
+ 1472  rm -rf post/
+ 1473  rm -rf blog/
+ 1474  rm -rf product/
+ 1475  ls -l
+ 1476  cd
+ 1477  sudo apt-get install gedit-plugins
+ 1478  cd
+ 1479  clear
+ 1480  cd Do
+ 1481  cd Downloads/
+ 1482  ls
+ 1483  cd gedit-tm-autocomplete-1.0.5-gedit3/
+ 1484  ls
+ 1485  ./install.sh
+ 1486  cd
+ 1487  sudo apt-add-repository ppa:ubuntu-on-rails/ppa
+ 1488  sudo apt-get update
+ 1489  sudo apt-get install gedit-gmate
+ 1490  sudo apt-get install dconf-tools
+ 1491  dconf-editor
+ 1492  ./install.sh
+ 1493  mysql -u root -p "password"
+ 1494  mysql -u root -p
+ 1495  cd Rails/
+ 1496  ls
+ 1497  cd Pace360/
+ 1498  gedit *
+ 1499  cd
+ 1500  ls -l
+ 1501  rm a.html
+ 1502  ls
+ 1503  ls -l
+ 1504  rm a.html~ 
+ 1505  ls -l
+ 1506  ls -lt
+ 1507  ls -lh
+ 1508  cd Chetan\ V2/
+ 1509  ls
+ 1510  ls -l
+ 1511  cdmod 775 Samples/
+ 1512  chmod 775 Samples/
+ 1513  ls -l
+ 1514  cd gitAssesment/
+ 1515  ls -l
+ 1516  cd barepo/
+ 1517  ls
+ 1518  ls -l
+ 1519  ls -lt
+ 1520  cd ..
+ 1521  ls -lt
+ 1522  rm -rf repo/
+ 1523  rm -rf barepo/
+ 1524  ls -l
+ 1525  cd ..
+ 1526  ls -l
+ 1527  cd Rails/
+ 1528  cd ..
+ 1529  rm Chetan\ V2/ Chetan_V2
+ 1530  mv Chetan\ V2/ Chetan_V2
+ 1531  ls -l
+ 1532  cd Chetan_V2/
+ 1533  ls -l
+ 1534  cd Rails/
+ 1535  ls
+ 1536  cd Pace360/
+ 1537  ls
+ 1538  mv Pace360/ /home/chetan/Chetan_V2/Rails/
+ 1539  sudo mv Pace360/ /home/chetan/Chetan_V2/Rails/
+ 1540  sudo mv -f Pace360/ /home/chetan/Chetan_V2/Rails/
+ 1541  ls
+ 1542  cd ..
+ 1543  ls 
+ 1544  ls
+ 1545  cd ..
+ 1546  ls -l
+ 1547  rails new RailsPractice -d mysql
+ 1548  ls -l
+ 1549  cd RailsPractice/
+ 1550  ls
+ 1551  cd
+ 1552  sudo dpkg-reconfigure mysql-server-5.6
+ 1553  mysql -u root -u password
+ 1554  mysql -u root -p password
+ 1555  mysql -u root -p
+ 1556  clear
+ 1557  cd Chetan_V2/
+ 1558  ls
+ 1559  cd Rails
+ 1560  cd ..
+ 1561  cd RailsPractice/
+ 1562  ls
+ 1563  bundle
+ 1564  rake db:migrate
+ 1565  rails s
+ 1566  rake db:create
+ 1567  rake db:migrate
+ 1568  rails generate controller Tasks index show new edit create update delete
+ 1569  rails destroy controller Tasks;
+ 1570  rails g scaffold Task name:string
+ 1571  rails destroy scaffold Task
+ 1572  rails g scaffold Task name:string
+ 1573  rails s
+ 1574  rake db:migrate;
+ 1575  rails s
+ 1576  clear
+ 1577  cd ..
+ 1578  ls
+ 1579  cd RailsPractice/
+ 1580  ls -l
+ 1581  cd ..
+ 1582  rm -rf RailsPractice/
+ 1583  ls -l
+ 1584  rails new rails new posts
+ 1585  rails new posts
+ 1586  cfd posts/
+ 1587  cd posts/
+ 1588  rails g scaffold post title:string content:text
+ 1589  db:migrate;
+ 1590  db:migrate
+ 1591  rake db:migrate
+ 1592  rails s
+ 1593  cd Chetan_V2/
+ 1594  cd posts/
+ 1595  ls
+ 1596  rake routes;
+ 1597  rake db:migrate:reset
+ 1598  rake db:migrate
+ 1599  cd Chetan_V2/posts/
+ 1600  rake routes
+ 1601  rake db:migrate:reset
+ 1602  cd ..
+ 1603  ls
+ 1604  rm -rf posts/
+ 1605  rails new tasks -d mysql
+ 1606  cd tasks/
+ 1607  ls
+ 1608  subl .
+ 1609  rails g scaffold Task name:string
+ 1610  rake routes
+ 1611  rake db:migrate:reset
+ 1612  ls -l
+ 1613  cd Chetan_V2/
+ 1614  ls
+ 1615  cd Rails/
+ 1616  ls
+ 1617  cd ..
+ 1618  cd posts/
+ 1619  ls
+ 1620  rails s
+ 1621  rake cd
+ 1622  cd ..
+ 1623  cd tasks/
+ 1624  rake db:create
+ 1625  rake db:migrate
+ 1626  rails s
+ 1627  cd
+ 1628  sudo poweroff
+ 1629  cd Chetan_V2/
+ 1630  ls
+ 1631  cd tasks/
+ 1632  raisls s
+ 1633  rails s
+ 1634  cd ..
+ 1635  ls
+ 1636  cd ..
+ 1637  ls
+ 1638  cd Chetan_V2/
+ 1639  cd Rails/
+ 1640  ls
+ 1641  cd po
+ 1642  cd Pace360/
+ 1643  ls
+ 1644  rails s
+ 1645  atom
+ 1646  atom .
+ 1647  rails s
+ 1648  ifconfig
+ 1649  rails s
+ 1650  exit
+ 1651  cd Chetan_V2/Rails/Pace360/
+ 1652  rails s
+ 1653  cd Chetan_V2/
+ 1654  ls
+ 1655  mkdir E-Commerce
+ 1656  ls
+ 1657  cd E-Commerce/
+ 1658  rails new OnlineShopping -d mysql "0.3.20"
+ 1659  ls
+ 1660  cd OnlineShopping/
+ 1661  subl .
+ 1662  cd ..
+ 1663  rm -rf OnlineShopping/
+ 1664  rails new OnlineShopping -d mysql
+ 1665  cdO
+ 1666  cd OnlineShopping/
+ 1667  subl .
+ 1668  bundle
+ 1669  rake db:create
+ 1670  rails s
+ 1671  rails -v
+ 1672  rails g controller Users new
+ 1673  rails g model User first_name:string last_name:string email:string
+ 1674  rake db:migrate
+ 1675  rails console --sandbox
+ 1676  rake db:rollback
+ 1677  rails destroy model User
+ 1678  rails destroy controller Users
+ 1679  rails g scaffold User first_name:string last_name:string email:string password:digest
+ 1680  rake db:migrate
+ 1681  bundle
+ 1682  bundle install
+ 1683  rails s
+ 1684  rails g controller Sessions new
+ 1685  rails destroy controller Sessions new
+ 1686  rails g controller Sessions create destroy
+ 1687  rails g controller Admin
+ 1688  rails destroy controller Admin
+ 1689  rails g controller Admin index
+ 1690  rails destroy scaffold User
+ 1691  rails g scaffold User first_name:string last_name:string email:string password:digest
+ 1692  rake db:migrate
+ 1693  mysql -u root -p
+ 1694  rake db:migrate
+ 1695  rake db:create
+ 1696  rake db:migrate
+ 1697  rails c
+ 1698  rake db:migrate:reset
+ 1699  rake db:migrate
+ 1700  rake routes
+ 1701  rails destroy controller Sessions
+ 1702  rails g controller Sessions new create destroy
+ 1703  rails destroy controller admin
+ 1704  rails g controller Pages home help about contact_us title
+ 1705  bundle
+ 1706  rake routes
+ 1707  rails c
+ 1708  bunsle
+ 1709  bundle
+ 1710  rails g devise:install
+ 1711  rails generate devise user
+ 1712  rake db:migrate
+ 1713  rake db:ro;;back
+ 1714  rake db:rollback
+ 1715  rake db:migrate
+ 1716  cd /Chetan_V2/Shop$
+ 1717  cd /Chetan_V2/Shop
+ 1718  cd Chetan_V2/Shop/
+ 1719  rails s
+ 1720  raols s
+ 1721  rails s
+ 1722  cd..
+ 1723  cd ..
+ 1724  cd Shop360/
+ 1725  rails s
+ 1726  cd Chetan_V2/
+ 1727  ls
+ 1728  rm -rf E-Commerce/
+ 1729  ls
+ 1730  cd Rails/
+ 1731  ls
+ 1732  cd .
+ 1733  cd ..
+ 1734  rails new Shop -d mysql
+ 1735  cd Shop/
+ 1736  subl .
+ 1737  rails g controller Pages home about faqs contact help
+ 1738  raild db:create
+ 1739  pwd
+ 1740  rake db:migrate
+ 1741  rake db:create
+ 1742  rake db:migrate
+ 1743  bundle
+ 1744  bundle install
+ 1745  bundle update
+ 1746  rails g controller Customer index show new edit create update destroy
+ 1747  rails destroy controller Customer
+ 1748  rails g controller Customer new
+ 1749  rails destroy controller Customer
+ 1750  rails g controller Customer new
+ 1751  rails destroy controller Customer
+ 1752  rails g controller Customers new
+ 1753  rails g model name:string email:string mobile:integer{15} password:digest address:text country:string
+ 1754  rails g model Customer name:string email:string mobile:integer{15} password:digest address:text country:string
+ 1755  rails destroy model Customer
+ 1756  rails g model Customer name:string email:string mobile:integer{5} password:digest address:text country:string
+ 1757  rake db:migrate
+ 1758  rails generate migration add_index_to_customers_email
+ 1759  mysql -u
+ 1760  mysql -u root
+ 1761  mysql -u root -p
+ 1762  rake db:migrate
+ 1763  mysql -u root -p
+ 1764  rake routes
+ 1765  rails c
+ 1766  rails c --sandbox
+ 1767  cd ..
+ 1768  rails new delete -d mysql
+ 1769  cd delete/
+ 1770  subl .
+ 1771  bundle
+ 1772  rake db:migrate
+ 1773  rake db:create
+ 1774  rake db:migrate
+ 1775  rails g scaffold Customer name:string email:string mobile:integer{5} password:digest address:text country:string
+ 1776  rake db:migrate
+ 1777  rails s
+ 1778  bundle
+ 1779  rails s
+ 1780  rails g
+ 1781  rails destroy scaffold Customer name:string email:string mobile:integer{5} password:digest address:text country:string
+ 1782  rails g scaffold Customer name:string email:string mobile:phone password:digest address:text country:string
+ 1783  rake db:migrate
+ 1784  cd ..
+ 1785  rm -rf delete
+ 1786  ls
+ 1787  rails new Shop360 -d mysql
+ 1788  ls Shop360/
+ 1789  cd Shop360/
+ 1790  subl .
+ 1791  bundle
+ 1792  rake db:create
+ 1793  rake db:migrate
+ 1794  rake db:rollback
+ 1795  rake db:create
+ 1796  rake db:migrate
+ 1797  rails
+ 1798  rails s
+ 1799  rails g scaffold Customer first_name:string last_name:string email:string mobile:integer address:text country:string city:string pincode:integer date_of_birth:date
+ 1800  rake db:migrate
+ 1801  rails s
+ 1802  rails destroy scaffold Customer first_name:string last_name:string email:string mobile:integer{5} address:text country:string city:string pincode:integer date_of_birth:date
+ 1803  rails g scaffold Customer first_name:string last_name:string email:string mobile:integer{5} address:text country:string city:string pincode:integer date_of_birth:date
+ 1804  rails s
+ 1805  rake db:migrate
+ 1806  rake db:drop
+ 1807  rake db:migrate
+ 1808  rake db:create
+ 1809  rake db:migrate
+ 1810  rails s
+ 1811  rake db:drop
+ 1812  rails destroy scaffold Customer first_name:string last_name:string email:string mobile:integer{5} address:text country:string city:string pincode:integer date_of_birth:date
+ 1813  rails g scaffold Customer first_name:string last_name:string email:string mobile:integer{5} address:text country:string city:string pincode:integer date_of_birth:date password:digest
+ 1814  rails s
+ 1815  rake db:create
+ 1816  rake db:migrate
+ 1817  rails s
+ 1818  rake db:reset
+ 1819  rake db:migrate:reset
+ 1820  rails s
+ 1821  rails g controller Pages home about faqs contact help
+ 1822  rails s
+ 1823  rails generate controller Sessions new
+ 1824  rake routes
+ 1825  rails generate migration add_remember_digest_to_customers remember_digest:string
+ 1826  rake db:migrate
+ 1827  rake routes
+ 1828  bundle
+ 1829  rails generate migration add_admin_to_customers admin:boolean
+ 1830  rake db:migrate
+ 1831  mysql -u root -p
+ 1832  cd Chetan_V2/
+ 1833  ls
+ 1834  cd Shop360/
+ 1835  subl .
+ 1836  pwd
+ 1837  rails controller AccountActivations --no-test-framework
+ 1838  rails g migration add_activation_to_customers activation_digest:string activated:boolead activated_at:datetime
+ 1839  rails destroy migration add_activation_to_customers activation_digest:string activated:boolead activated_at:datetime
+ 1840  rails g migration add_activation_to_customers activation_digest:string activated:boolean activated_at:datetime
+ 1841  rake db:migrate
+ 1842  rake db:migrate:reset
+ 1843  rake db:seed
+ 1844  clear
+ 1845  rake db:seed
+ 1846  rails g mailer CustomerMailer account_activation password_reset
+ 1847  rake routes
+ 1848  rails destroy migration add_activation_to_customers activation_digest:string activated:boolead activated_at:datetime
+ 1849  rake db:migrate
+ 1850  rake db:drop
+ 1851  rake db:migrate
+ 1852  rake db:create
+ 1853  rake db:migrate
+ 1854  rake db:seed
+ 1855  rails g scaffold product name:string brand:string description:text price:decimal{10,2} quantity:integer
+ 1856  rake db:migrate
+ 1857  rake db:reset VERSION=20150924063744
+ 1858  rails destroy scaffold product name:string brand:string description:text price:decimal{10,2} quantity:integer
+ 1859  rails g scaffold product name:string brand:string description:text price:decimal quantity:integer
+ 1860  rails destroy scaffold product name:string brand:string description:text price:decimal{10,2} quantity:integer
+ 1861  rails g scaffold product product_name:string brand:string description:text price:decimal quantity:integer
+ 1862  rake routes
+ 1863  clear
+ 1864  rake routes
+ 1865  rake db:migrate
+ 1866  mysql -u root -p
+ 1867  rake db:migrate
+ 1868  rake routes
+ 1869  cd ..
+ 1870  mkdir E-commerce
+ 1871  cd E-commerce/
+ 1872  git clone git@github.com:kschetan92/Shop360.git
+ 1873  ls
+ 1874  git branch
+ 1875  cd Shop360/
+ 1876  ls
+ 1877  git branch
+ 1878  git checkout -b Shop360
+ 1879  git branch
+ 1880  git status
+ 1881  git add.
+ 1882  git add .
+ 1883  git status
+ 1884  git commit -m "Pushing Shop360 Application"
+ 1885  git push origin Shop360 
+ 1886  pwd
+ 1887  rake routes
+ 1888  subl .
+ 1889  bundle update
+ 1890  sudo apt-get update
+ 1891  clear
+ 1892  rails g controller store index show
+ 1893  rake routes
+ 1894  mysql -u root -p
+ 1895  clear
+ 1896  bundle
+ 1897  rails generate migration Add_Deleted_At_To_Customers deleted_at:datetime:index
+ 1898  rake db:migrate
+ 1899  rails c
+ 1900  rake db:migrate
+ 1901  Customer.last
+ 1902  rails c
+ 1903  rails c --sandbox
+ 1904  mysql -u root -p
+ 1905  rails c --sandbox
+ 1906  mysql -u root -p
+ 1907  rails c --sandbox
+ 1908  bundle
+ 1909  rails c --sandbox
+ 1910  mysql -u root -p
+ 1911  rails c --sandbox
+ 1912  rake db:migrate
+ 1913  rails c --sandbox
+ 1914  exit
+ 1915  cd /Chetan_V2/Shop360
+ 1916  cd /Chetan_V2/Shop360/
+ 1917  cd Chetan_V2/Shop360/
+ 1918  rails s
+ 1919  cd Chetan_V2/E-commerce/Shop360/
+ 1920  cd 
+ 1921  cd Chetan_V2/E-commerce/Shop360/
+ 1922  rails s
+ 1923  cd Chetan_V2/
+ 1924  cd E-commerce/
+ 1925  cd Shop360/
+ 1926  rails c --sandbox
+ 1927  mysql -u root -p
+ 1928  rails destroy migration Add_Deleted_At_To_Customers deleted_at:datetime:index
+ 1929  rails g migration Add_Deleted_At_To_Products deleted_at:datetime:index
+ 1930  rake db:migrate
+ 1931  rails g migration Add_Deleted_At_To_Customers deleted_at:datetime:index
+ 1932  rake db:migrate
+ 1933  rails c --sandbox
+ 1934  rake db:migrate
+ 1935  rails c --sandbox
+ 1936  mysql -u root -p
+ 1937  rails -c
+ 1938  rails c
+ 1939  rails g scaffold category category_name:string description:text
+ 1940  rake db:migrate
+ 1941  rails g migration add_category_id_to_Products category_id:integer
+ 1942  rake db:migrate
+ 1943  rails c --sandbox
+ 1944  rake routes
+ 1945  sudo apt-get update
+ 1946  sudo apt-get install imagemagick --fix-missing
+ 1947  sudo apt-get install imagemagick -y
+ 1948  which convert
+ 1949  which convert imagemagick
+ 1950  where imagemagick
+ 1951  where is imagemagick
+ 1952  gwhere imagemagick
+ 1953  find imagemagick
+ 1954  imagemagick
+ 1955  which convert
+ 1956  cd /usr/bin/convert
+ 1957  cd /usr/bin
+ 1958  ls
+ 1959  ls -l
+ 1960  cat convert
+ 1961  vi convert
+ 1962  rails c
+ 1963  rails c --sandbox
+ 1964  cd Chetan_V2/E-commerce/Shop360/
+ 1965  rails c
+ 1966  bundle update
+ 1967  rails s 
+ 1968  rake db:migrate
+ 1969  rails s
+ 1970  rake db:rollback VERSION=20150924065203
+ 1971  rake db:migrate
+ 1972  rake db:migrate VERSION=20150925040706
+ 1973  rake db:migrate
+ 1974  rails destroy migration add_deleted_at_to_Products
+ 1975  rails generate migration Add_Deleted_At_To_Products deleted_at:datetime:index
+ 1976  rake db:migrate
+ 1977  raisl s
+ 1978  rails s
+ 1979  exit
+ 1980  cd Chetan_V2/E-commerce/Shop360/
+ 1981  bundle
+ 1982  rails g migration add_image_to_products
+ 1983  rails destroy migration add_image_to_products
+ 1984  rails g migration add_image_to_products image_filename:string image_content_type:string image_filesize:integer image_updated_at:datetime
+ 1985  rake db:migrate
+ 1986  rails c
+ 1987  mysql -u root -p
+ 1988  rails destroy migration add_image_to_products image_file_name:string image_content_type:string image_file_size:integer image_updated_at:datetime
+ 1989  rails g migration add_image_to_products
+ 1990  rake db:migrate
+ 1991  mysql -u root -p
+ 1992  rails s
+ 1993  rails c
+ 1994  git status
+ 1995  git add .
+ 1996  git status
+ 1997  git commit -m "adding soft delete, search, image to products and some more functionalities"
+ 1998  git branch
+ 1999  git push origin Shop360 
+ 2000  exit
+ 2001  history > history.txt

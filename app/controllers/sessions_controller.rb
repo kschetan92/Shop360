@@ -1,4 +1,6 @@
 class SessionsController < ApplicationController
+  skip_before_filter :authorize
+
   def new
   end
 
@@ -8,7 +10,7 @@ class SessionsController < ApplicationController
       log_in customer
       flash[:success] = "You are now logged in, Welcome to Shop360"
       params[:session][:remember_me] == '1' ? remember(customer) : forget(customer)
-      redirect_back_or home_path
+      redirect_back_or root_path
     else
       flash.now[:danger] = "Invalid email or password combination"
       render 'new'
@@ -17,6 +19,7 @@ class SessionsController < ApplicationController
 
   def destroy
     log_out if logged_in?
+    session[:cart_id] = nil
     flash[:success] = "You are now logged out, Come back again for more"
     redirect_to root_url
   end
