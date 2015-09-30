@@ -18,6 +18,8 @@
         <ul class="nav navbar-nav navbar-right">
         <% display_name = current_customer.first_name + " " + current_customer.last_name%>
           <li><%= link_to "#{display_name}", current_customer, class: "active" %></li>
+          <li><%= link_to "Admin's Cart", current_cart, class: "navbar-brand" %></li>
+          <li><%= link_to "City", cities_path, class: "navbar-brand" %></li>
           <li><%= link_to "Customers", customers_path, class: "navbar-brand" %></li>
           <li><%= link_to "Products", products_path, class: "navbar-brand" %></li>
           <li><%= link_to "Category", categories_path, class: "navbar-brand" %></li>
@@ -30,6 +32,7 @@
         <ul class="nav navbar-nav navbar-right">
         <% display_name = current_customer.first_name + " " + current_customer.last_name%>
           <li><%= link_to "#{display_name}", current_customer, class: "active" %></li>
+          <li><%= link_to "My Cart", current_cart, class: "navbar-brand" %></li>
           <li><%= link_to "Log out", logout_path, method: "delete", class: "navbar-brand" %></li>
         </ul>
       

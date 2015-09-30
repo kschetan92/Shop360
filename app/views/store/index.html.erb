@@ -12,6 +12,8 @@
     <h4 class="price">
       <%= number_to_currency(product.price, :unit => "Rs ") %>
     </h4>
+    <div class="button">
     <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-info" %>
+    </div>
   </div>
   <% end %>

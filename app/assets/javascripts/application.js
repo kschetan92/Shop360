@@ -16,10 +16,8 @@
 //= require_tree .
 //= require bootstrap
 
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#slide").animate({
-            height: 'toggle'
-        });
-    });
+$(function() {
+   $('#flash').delay(500).fadeIn('normal', function() {
+      $(this).delay(300).fadeOut();
+   });
 });

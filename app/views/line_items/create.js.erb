@@ -1,4 +1,7 @@
-$('#cart').html("<%= j render @cart %>");
+page.replace_html("cart", render(@cart))
 
-$('#current_item').css({'background-color':'#88ff88'}).
-animate({'background-color':'#114411'}, 1000);
+page[:current_item].visual_effect :fade if @line_item.quantity < 1
+
+page[:current_item].visual_effect :highlight,
+                                  :startcolor => "#cc0000",
+                                  :endcolor => "#114411" 

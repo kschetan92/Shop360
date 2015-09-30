@@ -83,11 +83,9 @@ class ProductsController < ApplicationController
     end
 
     def admin_customer
-      if current_customer.admin?
-        
-      else
-      flash[:danger] = "You are not an admin, for your action an FIR has been filed against you."
-      redirect_to(root_url)
+      if !current_customer.admin?
+        flash[:danger] = "You are not an admin, for your action an FIR has been filed against you."
+        redirect_to(root_url)  
       end 
     end
 end

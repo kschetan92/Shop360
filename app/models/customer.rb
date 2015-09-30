@@ -2,6 +2,7 @@ class Customer < ActiveRecord::Base
   attr_accessor :remember_token
   acts_as_paranoid
   before_save :downcase_email
+  belongs_to :city
 
   validates :first_name, presence: true, length: {maximum: 200}
   validates :last_name, presence: true, length: {maximum: 50}
@@ -10,11 +11,7 @@ class Customer < ActiveRecord::Base
   has_secure_password
   validates :password, presence: true, length: { in: 6..20 }, allow_nil: true
   validates :mobile, presence: true, length: {maximum: 10}
-  validates :address, presence: true
-  validates :country, presence: true
-  validates :city, presence: true
-  validates :pincode, presence: true
-  validates :date_of_birth, presence: true
+  validates :address, :date_of_birth, :pincode, :city_id, presence: true
   has_attached_file :avatar, styles: { medium: "300x300>", thumb: "100x100>" }
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\Z/
 

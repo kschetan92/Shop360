@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :cities
   resources :orders
   root 'store#index'
 
@@ -20,19 +21,25 @@ Rails.application.routes.draw do
   post "login" => 'sessions#create'
 
   delete "logout" => 'sessions#destroy'
-
-  get "show_all_product" => 'products#index'  
-
-  get "add_product" => 'products#new'
-
+  
   get "/store/:id" => 'store#show', as: :store_product
 
   get 'search_results' => 'store#search_results'
-  resources :customers
+
+  resources :customers do
+    member do
+      get :remove_photo
+    end
+  end
   resources :products
   resources :categories
   resources :line_items
   resources :carts
+
+  # get 'customer/:id/remove_photo' => 'customers#remove_photo', as: :remove_photo
+
+  # get 'line_item/:id/remove_item' => 'line_items#remove_item', as: :remove_item
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

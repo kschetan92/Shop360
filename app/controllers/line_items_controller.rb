@@ -1,6 +1,5 @@
 class LineItemsController < ApplicationController
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
-  skip_before_filter :authorize, only: [:create]
 
   # GET /line_items
   # GET /line_items.json
@@ -31,7 +30,8 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart }
+        flash[:success] = "Item successfully added to cart"
+        format.html { redirect_to root_url }
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new }
@@ -59,7 +59,8 @@ class LineItemsController < ApplicationController
   def destroy
     @line_item.destroy
     respond_to do |format|
-      format.html { redirect_to line_items_url, notice: 'Line item was successfully destroyed.' }
+      flash[:success] = "Item was successfully removed from your cart"
+      format.html { redirect_to root_url }
       format.json { head :no_content }
     end
   end

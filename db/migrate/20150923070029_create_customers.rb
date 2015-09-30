@@ -6,8 +6,6 @@ class CreateCustomers < ActiveRecord::Migration
       t.string :email
       t.integer :mobile, limit: 5
       t.text :address
-      t.string :country
-      t.string :city
       t.integer :pincode
       t.date :date_of_birth
       t.string :password_digest

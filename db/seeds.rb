@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-dob = DateTime.new(1992, 6, 25)
+# dob = DateTime.new(1992, 6, 25)
 
 # Customer.create!(first_name:  "Chetan",
 #              last_name: "K S",

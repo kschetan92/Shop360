@@ -1,8 +1,9 @@
 class CustomersController < ApplicationController
-  before_action :set_customer, only: [:show, :edit, :update, :destroy]
+  before_action :set_customer, only: [:show, :edit, :update, :destroy, :remove_photo]
   before_action :logged_in_customer, only: [:index, :edit, :update, :destroy]
   before_action :correct_customer, only: [:edit, :update]
   before_action :admin_customer, only: [:destroy, :index]
+  before_action :set_cities, only: [:new, :edit]
   skip_before_filter :authorize
 
   # GET /customers
@@ -33,7 +34,7 @@ class CustomersController < ApplicationController
     respond_to do |format|
       if @customer.save
         log_in @customer
-        flash[:success] = "Registered successfully, Welcome to shop360."
+        flash[:success] = "Registered successfully, Welcome to shop360 #{@customer.first_name}"
         format.html { redirect_to @customer }
         format.json { render :show, status: :created, location: @customer }
       else
@@ -64,9 +65,16 @@ class CustomersController < ApplicationController
     @customer.destroy
     respond_to do |format|
       flash[:success] = "Customer deleted Sccessfully."
-      format.html { redirect_to customers_url }
+      format.html { redirect_to @customer }
       format.json { head :no_content }
     end
+  end
+
+  def remove_photo
+    @customer.avatar = nil
+    @customer.save
+    flash[:success] = "Photo removed successfully"
+    redirect_to @customer
   end
 
   private
@@ -75,9 +83,13 @@ class CustomersController < ApplicationController
       @customer = Customer.find(params[:id])
     end
 
+    def set_cities
+      @cities = City.order(:city_name)
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def customer_params
-      params.require(:customer).permit(:first_name, :last_name, :email, :mobile, :address, :country, :city, :pincode, :date_of_birth, :avatar, :password, :password_confirmation)
+      params.require(:customer).permit(:first_name, :last_name, :email, :mobile, :address,  :city_id, :pincode, :date_of_birth, :avatar, :password, :password_confirmation)
     end
 
     def logged_in_customer

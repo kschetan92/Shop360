@@ -1,11 +1,18 @@
 <% if @customer.avatar? %>
-  <p>
+  <p class="image">
     <%= image_tag @customer.avatar.url(:medium) %>
 <% else %>
-    <%= image_tag("missing.jpg", size: "300x300") %>
+    <%= image_tag("user-icon1.jpg", size: "300x300") %>
   </p>
 <% end %>
 <p>
+<% if @customer.avatar? %>
+  <% if @customer.persisted? %>
+        <%= link_to 'Remove photo', remove_photo_customer_path, class: "btn btn-info" %>
+  <% end %>
+<% end %>
+<br>
+<br>
   <strong>First name:</strong>
   <%= @customer.first_name %>
 </p>
@@ -30,15 +37,11 @@
   <%= @customer.address %>
 </p>
 
-<p>
-  <strong>Country:</strong>
-  <%= @customer.country %>
-</p>
-
-<p>
-  <strong>City:</strong>
-  <%= @customer.city %>
-</p>
+<% if @customer.city %>
+  <p>
+      <strong>City: </strong><%= @customer.city.city_name %>
+  </p>
+<% end %>
 
 <p>
   <strong>Pincode:</strong>
