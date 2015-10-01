@@ -31,6 +31,7 @@ gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'paranoia'
 gem 'paperclip'
+gem 'activemerchant'
 # Use Unicorn as the app server
 # gem 'unicorn'
 

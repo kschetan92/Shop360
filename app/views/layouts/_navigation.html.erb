@@ -33,6 +33,7 @@
         <% display_name = current_customer.first_name + " " + current_customer.last_name%>
           <li><%= link_to "#{display_name}", current_customer, class: "active" %></li>
           <li><%= link_to "My Cart", current_cart, class: "navbar-brand" %></li>
+          <li><%= link_to "My Order", search_orders_order_path(current_customer.id), class: "navbar-brand" %></li>
           <li><%= link_to "Log out", logout_path, method: "delete", class: "navbar-brand" %></li>
         </ul>
       

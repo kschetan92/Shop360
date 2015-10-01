@@ -3,6 +3,7 @@ class Customer < ActiveRecord::Base
   acts_as_paranoid
   before_save :downcase_email
   belongs_to :city
+  has_many :orders
 
   validates :first_name, presence: true, length: {maximum: 200}
   validates :last_name, presence: true, length: {maximum: 50}

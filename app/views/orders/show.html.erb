@@ -23,5 +23,5 @@
   <%= @order.payment_mode %>
 </p>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+<%= link_to 'Edit Order', edit_order_path(@order), class: "btn btn-warning" %>
+<%= link_to 'Back', orders_path, class: "btn btn-warning" %>

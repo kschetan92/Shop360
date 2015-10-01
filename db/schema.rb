@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150930130439) do
+ActiveRecord::Schema.define(version: 20151001072107) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -37,8 +37,6 @@ ActiveRecord::Schema.define(version: 20150930130439) do
     t.string   "email",               limit: 255
     t.integer  "mobile",              limit: 8
     t.text     "address",             limit: 65535
-    t.string   "country",             limit: 255
-    t.string   "city",                limit: 255
     t.integer  "pincode",             limit: 4
     t.date     "date_of_birth"
     t.string   "password_digest",     limit: 255
@@ -73,7 +71,11 @@ ActiveRecord::Schema.define(version: 20150930130439) do
     t.string   "payment_mode", limit: 255
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
+    t.datetime "deleted_at"
+    t.integer  "customer_id",  limit: 4
   end
+
+  add_index "orders", ["deleted_at"], name: "index_orders_on_deleted_at", using: :btree
 
   create_table "products", force: :cascade do |t|
     t.string   "product_name",       limit: 255

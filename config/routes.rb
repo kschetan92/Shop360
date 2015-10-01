@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
 
   resources :cities
-  resources :orders
+  resources :orders do
+    member do
+      get :search_orders
+    end
+  end
+
+
   root 'store#index'
 
   get "home" => 'pages#home'
