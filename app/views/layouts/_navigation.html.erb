@@ -1,0 +1,50 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li><div class="navbar-header">
+        <a href="<%= root_path %>" class="navbar-brand"><span class="glyphicon glyphicon-shopping-cart"></span> Shop360</a>
+        </div></li>
+        <li><a href="<%= about_path %>">About</a></li>
+        <li><a href="<%= faqs_path %>">FAQ's</a></li>
+        <li><a href="<%= contact_path %>">Contact</a></li>
+        <li><a href="<%= help_path %>">Help</a></li>
+      </ul>
+      
+      <% if logged_in? and current_customer.admin? %>
+        
+        <ul class="nav navbar-nav navbar-right">
+        <% display_name = current_customer.first_name + " " + current_customer.last_name%>
+          <li><%= link_to "#{display_name}", current_customer, class: "active" %></li>
+          <li><%= link_to "Admin's Cart", current_cart, class: "navbar-brand" %></li>
+          <li><%= link_to "City", cities_path, class: "navbar-brand" %></li>
+          <li><%= link_to "Customers", customers_path, class: "navbar-brand" %></li>
+          <li><%= link_to "Products", products_path, class: "navbar-brand" %></li>
+          <li><%= link_to "Category", categories_path, class: "navbar-brand" %></li>
+          <li><%= link_to "Orders", orders_path, class: "navbar-brand" %></li>
+          <li><%= link_to "Log out", logout_path, method: "delete", class: "navbar-brand" %></li>
+        </ul>
+      
+      <% elsif logged_in? %>
+       
+        <ul class="nav navbar-nav navbar-right">
+        <% display_name = current_customer.first_name + " " + current_customer.last_name%>
+          <li><%= link_to "#{display_name}", current_customer, class: "active" %></li>
+          <li><%= link_to "My Cart", current_cart, class: "navbar-brand" %></li>
+          <li><%= link_to "My Order", search_orders_order_path(current_customer.id), class: "navbar-brand" %></li>
+          <li><%= link_to "Log out", logout_path, method: "delete", class: "navbar-brand" %></li>
+        </ul>
+      
+      <% else %>
+      
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="<%= signup_path %>"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="<%= login_path %>"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+
+      <% end %>
+    </div>
+  </div>
+</nav>

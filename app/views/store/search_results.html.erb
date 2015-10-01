@@ -1,0 +1,22 @@
+<% if @products.size.zero? %>
+  <h4 style="color: red">Sorry No results matched your search</h4>
+<% else %>
+
+<% @products.each do |product| %>
+
+  <div class="store">
+    <% if product.image? %>
+      <%= image_tag product.image.url(:medium) %>
+    <% else %>
+      <%= image_tag("missing.jpg", size: "300x300") %>
+    <% end %>
+    <h2 class="product">
+      <%= link_to product.product_name, store_product_path(product) %>
+    </h2>
+    <h4 class="price">
+      <%= number_to_currency(product.price, :unit => "Rs ") %>
+    </h4>
+    <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn btn-info" %>
+  </div>
+  <% end %>
+<% end %>

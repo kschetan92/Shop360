@@ -1,0 +1,11 @@
+<h1>Shop360</h1>
+<% display_name = @customer.first_name + " " + @customer.last_name %>
+
+<p>Hi <%= "#{display_name}" %>,</p>
+
+<p>
+Welcome to Shop360! A place to fullfill all your shopping needs from a small button to a big widescreen TV. Click on the link below to activate your account and get started to Shop at 360. 
+</p>
+
+<%= link_to "Activate", edit_account_activation_url(@customer.activation_token, 
+                                                    email: @customer.email) %>
